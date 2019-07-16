@@ -1,21 +1,15 @@
-var Contact = React.createClass({
+var Contacts = React.createClass({
   propTypes: {
-    item: React.PropTypes.object.isRequired,
+    items: React.PropTypes.array.isRequired,
   },
 
   render: function() {
+    var contacts = this.props.items.map(function(contact) {
+        return React.createElement(Contact, {item: contact, key: contact.id});
+    });
+
     return (
-      React.createElement('div', {className: 'contactItem'},
-        React.createElement('img', {
-          className: 'contactImage',
-          src: 'http://icons.veryicon.com/ico/System/100%20Flat%20Vol.%202/contacts.ico'
-        }),
-        React.createElement('p', {className: 'contactLabel'}, 'Imię: ' + this.props.item.firstName),
-        React.createElement('p', {className: 'contactLabel'}, 'Nazwisko: ' + this.props.item.lastName),
-        React.createElement('a', {className: 'contactEmail', href: 'mailto:' + this.props.item.email},
-          this.props.item.email
-        )
-      )
-    )
-  },
+      React.createElement('ul', {className: 'contactsList'}, contacts)
+    );
+  }
 });
