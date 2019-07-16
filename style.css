@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+.header {
+	font-size: 45px;
+	font-weight: 700;
+	color: #1094D0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.app {
+	margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+}
+.contactForm {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.contactForm input {
+	padding: 8px;
+	margin: 10px;
+	border-radius: 12px;
+}
+.contactForm button {
+	margin: 10px auto;
+	padding: 8px;
+	color: #1094D0;
+	font-size: 16px;
+	font-weight: 700;
+	background-color: #ffff;
+	border: 2px solid #1094D0;
+	border-radius: 12px;
+	width: 200px;
+	cursor: pointer;
+	transition: .2s;
+}
+.contactForm button:hover {
+	background: #1094D0;
+	color: #ffff;
+}
+.contactsList {
+    list-style: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+.contactItem {
+    margin: 15px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 14px 0px #0B325E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactImage {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.contactLabel, .contactEmail {
+	width: 60%;
+	margin: 10px;
+}
