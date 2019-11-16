@@ -1,4 +1,7 @@
-# reactJS-contacts-app
-https://paulinastefanska.github.io/reactJS-contacts-app/ <br>
-Contacts list app. <br>
-Used technologies: ReactJS, HTML, CSS.
+# ReactJS-contacts-app
+### See [DEMO](https://paulinastefanska.github.io/reactJS-contacts-app)
+## Tech stack
+- ReactJS, 
+- HTML, 
+- CSS.
+- RWD.
