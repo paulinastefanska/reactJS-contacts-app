@@ -8,7 +8,7 @@ var Contact = React.createClass({
       React.createElement('div', {className: 'contactItem'},
         React.createElement('img', {
           className: 'contactImage',
-          src: 'http://icons.veryicon.com/png/System/Qetto%202/contacts.png'
+          src: 'https://icons.veryicon.com/png/System/Qetto%202/contacts.png'
         }),
         React.createElement('p', {className: 'contactLabel'}, 'First name: ' + this.props.item.firstName),
         React.createElement('p', {className: 'contactLabel'}, 'Last name: ' + this.props.item.lastName),
